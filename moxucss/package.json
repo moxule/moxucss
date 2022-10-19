@@ -1,6 +1,6 @@
 {
   "name": "moxucss",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "你是否对原子类过于零散感到难受,moxucss8个类名解决你80%的css问题",
   "main": "index.mjs",
   "scripts": {},

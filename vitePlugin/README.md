@@ -8,6 +8,7 @@ moxucss的css不是通过预设的css类名来实现的，而是通过正则匹�
 moxucss还有着变量，主题完全可以通过定义变量来实现。
 moxucss可以自定义函数类，当moxucss已有的类名不满足你的需求时，你可以定义你的函数类来解决问题，只要你够闲，你完全可以手撸一套原子类。
 
+支持vue,react,uniapp等只要用moxucss语法的都行
 
  + [Moxucss8个函数类](#nzhsl)
  + [过渡/变换/动画](#css3) 看看就得了，仅供参考，网上有更优秀的动画框架
@@ -16,7 +17,8 @@ moxucss可以自定义函数类，当moxucss已有的类名不满足你的需求
  + [定义行内函数类](#hnhsl) 行内函数类是唯一全局生效的，其他函数类只能在class=“”生效
  + [选择器](#xzq)
  + [配置文件](#pzwj) 全局定义函数类和变量在这里
- + [moxucss vite插件地址](https://www.npmjs.com/package/vite-plugin-moxucss) 支持vue,react,uniapp等只要用moxucss语法的都行
+ + [moxucss](https://www.npmjs.com/package/moxucss) 
+ + [github](https://github.com/moxule/moxucss) 
 
 
 ## <span id="nzhsl">安装使用</span>
