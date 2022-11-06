@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs'
-import { moxucss } from './moxucss/index.mjs'
+import { moxucss } from '../moxucss/index.mjs'
 
 export default function vitePluginMoxucss (config = {}) {
 

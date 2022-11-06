@@ -2,11 +2,11 @@ export default {
     input: "./index.mjs",
     output:[
         {
-            file:"./dist/index.cjs.js",
+            file:"./dist/index.js",
             format:"cjs",
         },
         {
-            file:"./dist/index.es.js",
+            file:"./dist/index.mjs",
             format:"es",
         }
     ]

@@ -31,14 +31,14 @@ npm i vite-plugin-moxucss -D
 // ./vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import moxucss from 'vite-plugin-moxucss'
+import moxucssPlugin from 'vite-plugin-moxucss'
 import { join } from "path";
 
 export default defineConfig({
-    // vue reate 都支持
+    // vue reate uniapp都支持
     // moxucss要放在框架插件的前面，不然拿不到原文件
   plugins: [
-    moxucss({
+    moxucssPlugin({
         // 生成css路径
         outputPath: join(__dirname, './src/moxucss.css'),
         // 添加识别的文件,以下默认支持,可以不写
@@ -49,7 +49,7 @@ export default defineConfig({
 })
 
 ```
-在入口文件导入moxucss.css文件:
+在main.js入口文件导入moxucss.css文件:
 ```js
 // ./src/main.js
 import { createApp } from 'vue'
@@ -58,25 +58,6 @@ import App from './App.vue'
 import './moxucss.css'
 
 createApp(App).mount('#app')
-
-```
-用不了的看这，特别是uniapp的:
-```js
-// vite-plugin-moxucss/dist下面有俩个版本，es和cjs的，不行就都试一下
-// vite.config.js
-import { defineConfig } from 'vite';
-import uni from '@dcloudio/vite-plugin-uni';
-import path from 'path'
-// uniapp 要导入这个，要是正常的导入能用，原来该怎么导你就怎么导
-import moxucss from 'vite-plugin-moxucss/dist/index.cjs.js'
-
-const moxucssPath = path.join(__dirname,'./moxucss.css')
-export default defineConfig({
-	plugins: [moxucss({outputPath:moxucssPath}), uni()]
-})
-
-// mian.js 或 App.vue
-import './moxucss.css'
 
 ```
 
